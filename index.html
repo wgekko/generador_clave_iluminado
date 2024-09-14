@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Clave-iluminado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="genpass-light"></div>
+    <div class="genpass-box">
+        <form action="#">
+            <input type="checkbox" class="input-check" id="input-check">
+            <label for="input-check" class="toggle">
+                <span class="text off">off</span>
+                <span class="text on">on</span>
+            </label>
+            <div class="light"></div>                    
+            <h2>Generador de Clave</h2> 
+            <hr class="text-light"/>                         
+            <div class="input-box">                           
+                <input type="number" id="inputLength" class="text-center" min="4" max="15" value="8" />
+                <label for="inputLength" class="title ">Cantidad de Caracteres</label>
+                <hr class="text-light"/>      
+            </div>                     
+            <div class="select-check">            
+                <div class="form-check m-3">
+                    <input type="checkbox" id="checkbox1" class="form-check-input" />
+                    <label class="form-check-label text-light" for="checkbox1"><a>Incluir Números</a></label>
+                </div>
+            </div>      
+            <div class="select-check">  
+                <div class="form-check m-3">
+                    <input type="checkbox" id="checkbox2" class="form-check-input" />
+                    <label class="form-check-label text-light" for="checkbox2"><a>Incluir Símbolos</a></label>
+                </div>  
+            </div>                          
+            <button  id="btnGenerate">Generar Clave</button>                       
+            <hr class="text-light" />                        
+            <p id="generatedPassword" class="badge text-dark"></p>    
+        </form>
+    </div>
+    <script src="scripts.js"></script>   
+</body>
+
+</html>
